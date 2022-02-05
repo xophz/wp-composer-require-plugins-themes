@@ -1,0 +1,27 @@
+{
+  "name": "xophz/wp-composer-json",
+  "description": "A tool to quickly help get your plugins and themes into composer.json",
+  "type": "wordpress-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Xophz\\WpComposerJson\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "xopherdeep",
+      "email": "xopher@vi.co"
+    }
+  ],
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true
+    },
+    "vendor-dir": "lib"
+  },
+  "require": {
+    "wp-user-manager/wp-optionskit": "^1.0",
+    "composer/composer": "^2.2"
+  }
+}
